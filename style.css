@@ -13,33 +13,102 @@ html {
 body {
   font-family: "Press Start 2P", sans-serif;
   color: #fff;
-  background-color: pink;
+  background-color: #6698ca;
 }
 
 .container {
   max-width: 80rem;
-  margin: 3rem auto;
+  margin: 10rem auto;
   padding: 1rem;
   background-color: #0054a8;
+  border: 2px solid #000;
 }
+
+/* is prime section */
 
 .is-prime {
+  margin-top: 4rem;
+
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
+  gap: 0.8rem;
 }
 
-.message {
+.is-prime-message {
   font-size: 1.6rem;
 }
 
-.input {
-  max-width: 17rem;
-  margin: 0.5rem;
-  padding: 2px;
-  font-family: inherit;
+.is-prime-result {
+  width: 15rem;
+  margin-left: 2rem;
+
+  font-size: 1.6rem;
+  color: #ffff00;
 }
 
-.result {
-  width: 15rem;
+/* prime count section */
+/* input */
+.prime-count {
+  margin-top: 3rem;
+}
+
+.input-countainer {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 0.8rem;
+}
+
+.prime-count-message {
+  font-size: 1.34rem;
+}
+
+/* output */
+.output-container {
+  margin-top: 2rem;
+  height: 4rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn-container {
+  width: 50%;
+}
+
+.results {
+  width: 50%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  font-size: 1.2rem;
+  color: #ffff00;
+}
+
+/* general */
+.input {
+  max-width: 17rem;
+  padding: 2px;
+
+  font-family: inherit;
+  text-align: center;
+  border: 2px solid #000;
+}
+
+.btn {
+  padding: 0.8rem 1.2rem;
+
+  font-family: inherit;
+  background-color: #ffff00;
+  border: 2px solid #000;
+}
+
+.btn:hover {
+  color: #ffff00;
+  background-color: #000;
+  border: 2px solid #ffff00;
 }
