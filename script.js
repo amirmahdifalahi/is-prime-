@@ -38,6 +38,7 @@ const isPrimeResult = document.querySelector(".is-prime-result");
 const btn = document.querySelector(".btn");
 const primeCounterValue = document.querySelector(".prime-counter-value");
 const lastPrimeNumber = document.querySelector(".last-prime-number");
+const notice = document.querySelector(".notice");
 
 const updateIsPrimeInput = function (e) {
   // console.log(e.target.value);
@@ -55,8 +56,15 @@ const updateBtn = function () {
   const [PC, LP] = calc(primeCountInput);
   // console.log(PC);
   // console.log(LP);
-  primeCounterValue.textContent = `Number of prime numbers: ${PC}`;
-  lastPrimeNumber.textContent = `Last prime number: ${LP}`;
+  if (!primeCountInput == "") {
+    primeCounterValue.textContent = `Number of prime numbers: ${PC}`;
+    lastPrimeNumber.textContent = `Last prime number: ${LP}`;
+    notice.classList.remove("hidden");
+  } else {
+    primeCounterValue.textContent = "";
+    lastPrimeNumber.textContent = `Please enter a number`;
+    notice.classList.add("hidden");
+  }
 };
 
 isPrimeInput.addEventListener("input", updateIsPrimeInput);

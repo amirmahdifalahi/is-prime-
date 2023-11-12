@@ -18,7 +18,7 @@ body {
 
 .container {
   max-width: 80rem;
-  margin: 10rem auto;
+  margin: 10rem auto 0;
   padding: 1rem;
   background-color: #0054a8;
   border: 2px solid #000;
@@ -67,6 +67,7 @@ body {
 /* output */
 .output-container {
   margin-top: 2rem;
+  margin-bottom: 2rem;
   height: 4rem;
 
   display: flex;
@@ -111,4 +112,18 @@ body {
   color: #ffff00;
   background-color: #000;
   border: 2px solid #ffff00;
+}
+
+.notice {
+  margin: 1rem auto 0;
+  padding: 0.5rem;
+
+  max-width: 80rem;
+
+  background-color: #8b0000;
+  border: 2px solid #fff;
+}
+
+.hidden {
+  display: none;
 }
